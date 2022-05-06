@@ -56,7 +56,7 @@ Standard time as a str in the form HH:MM am or HH:MM pm where HH will be from 01
 
 ## Exercise 2
 
-Create a new file in this repo called **linear.py**. Within it, create 2 functions: **get_a_b_c** and **is_point_on_line**. **get_a_b_c** takes in a str in the form of ax + by = c and returns a tupple of ints: a, b, c. **is_point_on_quad** takes in a str in the form ax + by = c and 2 ints - x, y and returns True if (x, y) is on the line.
+Create a new file in this repo called **linear.py**. Within it, create 2 functions: **get_a_b_c** and **is_point_on_line**. **get_a_b_c** takes in a str in the form of ax + by = c and returns a tupple of ints: a, b, c. **is_point_on_line** takes in a str in the form ax + by = c and 2 ints - x, y and returns True if (x, y) is on the line.
 
 ### Input Specification for get_a_b_c
 
