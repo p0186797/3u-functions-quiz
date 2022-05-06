@@ -56,36 +56,36 @@ Standard time as a str in the form HH:MM am or HH:MM pm where HH will be from 01
 
 ## Exercise 2
 
-Create a new file in this repo called **quadratics.py**. Within it, create 2 functions: **get_a_b_c** and **is_point_on_quad**. **get_a_b_c** takes in a str in the form of y = ax^2 + bx + c and returns a tupple of ints: a, b, c.
+Create a new file in this repo called **linear.py**. Within it, create 2 functions: **get_a_b_c** and **is_point_on_line**. **get_a_b_c** takes in a str in the form of ax + by = c and returns a tupple of ints: a, b, c. **is_point_on_quad** takes in a str in the form ax + by = c and 2 ints - x, y and returns True if (x, y) is on the line.
 
 ### Input Specification for get_a_b_c
 
-The function takes a str in the from y = ax^2 + bx + c.
+The function takes a str in the from ax + by = c.
 
-### Output Specification for gcd
+### Output Specification for get_a_b_c
 
 A tupple of 3 ints: a, b, c.
 
 **Sample Calls**
 ```
->>> get_a_b_c("y = -2x^2 + 4x - 5")
-(-2, 4, -5)
->>> get_a_b_c("y = 3x^2 
-12
+>>> get_a_b_c("-3x + 5y = 7")
+(-3, 5, 7)
+>>> get_a_b_c("12x - 7y = -5")
+(12, -7, -5)
 ```
 
-### Input Specification for reduce_fraction
+### Input Specification for is_point_on_line
 
-The function takes 2 positive integers greater than or equal to 1: **a** and **b**. They represent the numerator and denominator of a fraction.
+The function takes 3 inputs: a str in the form ax + by = c and 2 ints: x, y.
 
-### Output Specification for reduce_fraction
+### Output Specification for is_point_on_line
 
-A tuple of 2 positive integers that represent numerator and denominator of the fraction a/b reduced.
+True or False
 
 **Sample Calls**
 ```
->>> reduce_fraction(10, 12)
-(5, 6)
->>> reduce_fraction(16, 8)
-(2, 1)
+>>> is_point_on_line("-3x + 5y = 7", 1, 2)
+True
+>>> is_point_on_line("12x - 7y = -5", 4, 3)
+False
 ```
